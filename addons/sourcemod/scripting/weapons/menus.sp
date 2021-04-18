@@ -914,17 +914,9 @@ public int MainMenuHandler(Menu menu, MenuAction action, int client, int selecti
 				}
 				else if(StrEqual(info, "lang"))
 				{
-					if (EntWatch_HasSpecialItem(client))
+					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
 					{
-						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
-					}
-					
-					else
-					{
-						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
-						{
-							CreateLanguageMenu(client).Display(client, menuTime);
-						}
+						CreateLanguageMenu(client).Display(client, menuTime);
 					}
 				}
 				else
@@ -1142,19 +1134,11 @@ public int LanguageMenuHandler(Menu menu, MenuAction action, int client, int sel
 		{
 			if(IsClientInGame(client))
 			{
-				if (EntWatch_HasSpecialItem(client))
-				{
-					CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
-				}
+				char langIndexStr[4];
+				menu.GetItem(selection, langIndexStr, sizeof(langIndexStr));
+				int langIndex = StringToInt(langIndexStr);
 				
-				else
-				{
-					char langIndexStr[4];
-					menu.GetItem(selection, langIndexStr, sizeof(langIndexStr));
-					int langIndex = StringToInt(langIndexStr);
-				
-					g_iClientLanguage[client] = langIndex;
-				}
+				g_iClientLanguage[client] = langIndex;
 			}
 		}
 		case MenuAction_End:

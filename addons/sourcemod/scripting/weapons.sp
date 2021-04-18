@@ -244,12 +244,6 @@ public Action CommandWSLang(int client, int args)
 {
 	if (IsValidClient(client))
 	{
-		if (EntWatch_HasSpecialItem(client))
-		{
-			CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
-			return Plugin_Handled;
-		}
-		
 		int menuTime;
 		if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
 		{
