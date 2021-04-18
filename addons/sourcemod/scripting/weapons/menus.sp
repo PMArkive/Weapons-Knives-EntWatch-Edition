@@ -23,26 +23,34 @@ public int WeaponsMenuHandler(Menu menu, MenuAction action, int client, int sele
 		{
 			if(IsClientInGame(client))
 			{
-				int index = g_iIndex[client];
+				if (EntWatch_HasSpecialItem(client))
+				{
+					CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+				}
 				
-				char skinIdStr[32];
-				menu.GetItem(selection, skinIdStr, sizeof(skinIdStr));
-				int skinId = StringToInt(skinIdStr);
+				else 
+				{
+					int index = g_iIndex[client];
+					
+					char skinIdStr[32];
+					menu.GetItem(selection, skinIdStr, sizeof(skinIdStr));
+					int skinId = StringToInt(skinIdStr);
 				
-				g_iSkins[client][index] = skinId;
-				char updateFields[256];
-				char weaponName[32];
-				RemoveWeaponPrefix(g_WeaponClasses[index], weaponName, sizeof(weaponName));
-				Format(updateFields, sizeof(updateFields), "%s = %d", weaponName, skinId);
-				UpdatePlayerData(client, updateFields);
+					g_iSkins[client][index] = skinId;
+					char updateFields[256];
+					char weaponName[32];
+					RemoveWeaponPrefix(g_WeaponClasses[index], weaponName, sizeof(weaponName));
+					Format(updateFields, sizeof(updateFields), "%s = %d", weaponName, skinId);
+					UpdatePlayerData(client, updateFields);
 				
-				RefreshWeapon(client, index);
+					RefreshWeapon(client, index);
 				
-				DataPack pack;
-				CreateDataTimer(0.5, WeaponsMenuTimer, pack);
-				pack.WriteCell(menu);
-				pack.WriteCell(GetClientUserId(client));
-				pack.WriteCell(GetMenuSelectionPosition());
+					DataPack pack;
+					CreateDataTimer(0.5, WeaponsMenuTimer, pack);
+					pack.WriteCell(menu);
+					pack.WriteCell(GetClientUserId(client));
+					pack.WriteCell(GetMenuSelectionPosition());
+				}
 			}
 		}
 		case MenuAction_DisplayItem:
@@ -89,12 +97,23 @@ public Action WeaponsMenuTimer(Handle timer, DataPack pack)
 	
 	if(IsValidClient(clientIndex))
 	{
-		int menuTime;
-		if((menuTime = GetRemainingGracePeriodSeconds(clientIndex)) >= 0)
+		if (EntWatch_HasSpecialItem(clientIndex))
 		{
-			menu.DisplayAt(clientIndex, menuSelectionPosition, menuTime);
+			CPrintToChat(clientIndex, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+			return Plugin_Handled;
+		}
+		
+		else
+		{
+			int menuTime;
+			if((menuTime = GetRemainingGracePeriodSeconds(clientIndex)) >= 0)
+			{
+				menu.DisplayAt(clientIndex, menuSelectionPosition, menuTime);
+				return Plugin_Handled;
+			}
 		}
 	}
+	return Plugin_Handled;
 }
 
 public int WeaponMenuHandler(Menu menu, MenuAction action, int client, int selection)
@@ -109,47 +128,87 @@ public int WeaponMenuHandler(Menu menu, MenuAction action, int client, int selec
 				menu.GetItem(selection, buffer, sizeof(buffer));
 				if(StrEqual(buffer, "skin"))
 				{
-					int menuTime;
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						menuWeapons[g_iClientLanguage[client]][g_iIndex[client]].Display(client, menuTime);
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						int menuTime;
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							menuWeapons[g_iClientLanguage[client]][g_iIndex[client]].Display(client, menuTime);
+						}
 					}
 				}
 				else if(StrEqual(buffer, "float"))
 				{
-					int menuTime;
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						CreateFloatMenu(client).Display(client, menuTime);
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						int menuTime;
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateFloatMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 				else if(StrEqual(buffer, "stattrak"))
 				{
-					g_iStatTrak[client][g_iIndex[client]] = 1 - g_iStatTrak[client][g_iIndex[client]];
-					char updateFields[256];
-					char weaponName[32];
-					RemoveWeaponPrefix(g_WeaponClasses[g_iIndex[client]], weaponName, sizeof(weaponName));
-					Format(updateFields, sizeof(updateFields), "%s_trak = %d", weaponName, g_iStatTrak[client][g_iIndex[client]]);
-					UpdatePlayerData(client, updateFields);
+					if (EntWatch_HasSpecialItem(client))
+					{
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
 					
-					RefreshWeapon(client, g_iIndex[client]);
+					else
+					{
+						g_iStatTrak[client][g_iIndex[client]] = 1 - g_iStatTrak[client][g_iIndex[client]];
+						char updateFields[256];
+						char weaponName[32];
+						RemoveWeaponPrefix(g_WeaponClasses[g_iIndex[client]], weaponName, sizeof(weaponName));
+						Format(updateFields, sizeof(updateFields), "%s_trak = %d", weaponName, g_iStatTrak[client][g_iIndex[client]]);
+						UpdatePlayerData(client, updateFields);
 					
-					CreateTimer(1.0, StatTrakMenuTimer, GetClientUserId(client));
+						RefreshWeapon(client, g_iIndex[client]);
+					
+						CreateTimer(1.0, StatTrakMenuTimer, GetClientUserId(client));
+					}
 				}
 				else if(StrEqual(buffer, "nametag"))
 				{
-					int menuTime;
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						CreateNameTagMenu(client).Display(client, menuTime);
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						int menuTime;
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateNameTagMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 				else if (StrEqual(buffer, "seed"))
 				{
-					int menuTime;
-					if ((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						CreateSeedMenu(client).Display(client, menuTime);
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						int menuTime;
+						if ((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateSeedMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 			}
@@ -177,12 +236,23 @@ public Action StatTrakMenuTimer(Handle timer, int userid)
 	int clientIndex = GetClientOfUserId(userid);
 	if(IsValidClient(clientIndex))
 	{
-		int menuTime;
-		if((menuTime = GetRemainingGracePeriodSeconds(clientIndex)) >= 0)
+		if (EntWatch_HasSpecialItem(clientIndex))
 		{
-			CreateWeaponMenu(clientIndex).Display(clientIndex, menuTime);
+			CPrintToChat(clientIndex, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+			return Plugin_Handled;
+		}
+		
+		else
+		{
+			int menuTime;
+			if((menuTime = GetRemainingGracePeriodSeconds(clientIndex)) >= 0)
+			{
+				CreateWeaponMenu(clientIndex).Display(clientIndex, menuTime);
+				return Plugin_Handled;
+			}
 		}
 	}
+	return Plugin_Handled;
 }
 
 Menu CreateFloatMenu(int client)
@@ -219,46 +289,62 @@ public int FloatMenuHandler(Menu menu, MenuAction action, int client, int select
 				menu.GetItem(selection, buffer, sizeof(buffer));
 				if(StrEqual(buffer, "increase"))
 				{
-					g_fFloatValue[client][g_iIndex[client]] = g_fFloatValue[client][g_iIndex[client]] - g_fFloatIncrementSize;
-					if(g_fFloatValue[client][g_iIndex[client]] < 0.0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						g_fFloatValue[client][g_iIndex[client]] = 0.0;
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
 					}
-					if(g_FloatTimer[client] != INVALID_HANDLE)
+					
+					else
 					{
-						KillTimer(g_FloatTimer[client]);
-						g_FloatTimer[client] = INVALID_HANDLE;
-					}
-					DataPack pack;
-					g_FloatTimer[client] = CreateDataTimer(1.0, FloatTimer, pack);
-					pack.WriteCell(GetClientUserId(client));
-					pack.WriteCell(g_iIndex[client]);
-					int menuTime;
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
-					{
-						CreateFloatMenu(client).Display(client, menuTime);
+						g_fFloatValue[client][g_iIndex[client]] = g_fFloatValue[client][g_iIndex[client]] - g_fFloatIncrementSize;
+						if(g_fFloatValue[client][g_iIndex[client]] < 0.0)
+						{
+							g_fFloatValue[client][g_iIndex[client]] = 0.0;
+						}	
+						if(g_FloatTimer[client] != INVALID_HANDLE)
+						{
+							KillTimer(g_FloatTimer[client]);
+							g_FloatTimer[client] = INVALID_HANDLE;
+						}
+						DataPack pack;
+						g_FloatTimer[client] = CreateDataTimer(1.0, FloatTimer, pack);
+						pack.WriteCell(GetClientUserId(client));
+						pack.WriteCell(g_iIndex[client]);
+						int menuTime;
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateFloatMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 				else if(StrEqual(buffer, "decrease"))
 				{
-					g_fFloatValue[client][g_iIndex[client]] = g_fFloatValue[client][g_iIndex[client]] + g_fFloatIncrementSize;
-					if(g_fFloatValue[client][g_iIndex[client]] > 1.0)
-					{
-						g_fFloatValue[client][g_iIndex[client]] = 1.0;
+					if (EntWatch_HasSpecialItem(client))
+					{	
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
 					}
-					if(g_FloatTimer[client] != INVALID_HANDLE)
+					
+					else
 					{
-						KillTimer(g_FloatTimer[client]);
-						g_FloatTimer[client] = INVALID_HANDLE;
-					}
-					DataPack pack;
-					g_FloatTimer[client] = CreateDataTimer(1.0, FloatTimer, pack);
-					pack.WriteCell(GetClientUserId(client));
-					pack.WriteCell(g_iIndex[client]);
-					int menuTime;
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
-					{
-						CreateFloatMenu(client).Display(client, menuTime);
+						g_fFloatValue[client][g_iIndex[client]] = g_fFloatValue[client][g_iIndex[client]] + g_fFloatIncrementSize;
+						if(g_fFloatValue[client][g_iIndex[client]] > 1.0)
+						{
+							g_fFloatValue[client][g_iIndex[client]] = 1.0;
+						}
+						if(g_FloatTimer[client] != INVALID_HANDLE)
+						{
+							KillTimer(g_FloatTimer[client]);
+							g_FloatTimer[client] = INVALID_HANDLE;
+						}
+						DataPack pack;
+						g_FloatTimer[client] = CreateDataTimer(1.0, FloatTimer, pack);
+						pack.WriteCell(GetClientUserId(client));
+						pack.WriteCell(g_iIndex[client]);
+						int menuTime;
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateFloatMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 			}
@@ -290,16 +376,26 @@ public Action FloatTimer(Handle timer, DataPack pack)
 	
 	if(IsValidClient(clientIndex))
 	{
-		char updateFields[256];
-		char weaponName[32];
-		RemoveWeaponPrefix(g_WeaponClasses[index], weaponName, sizeof(weaponName));
-		Format(updateFields, sizeof(updateFields), "%s_float = %.2f", weaponName, g_fFloatValue[clientIndex][g_iIndex[clientIndex]]);
-		UpdatePlayerData(clientIndex, updateFields);
+		if (EntWatch_HasSpecialItem(clientIndex))
+		{
+			CPrintToChat(clientIndex, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+			return Plugin_Handled;
+		}
 		
-		RefreshWeapon(clientIndex, index);
+		else
+		{
+			char updateFields[256];
+			char weaponName[32];
+			RemoveWeaponPrefix(g_WeaponClasses[index], weaponName, sizeof(weaponName));
+			Format(updateFields, sizeof(updateFields), "%s_float = %.2f", weaponName, g_fFloatValue[clientIndex][g_iIndex[clientIndex]]);
+			UpdatePlayerData(clientIndex, updateFields);
+		
+			RefreshWeapon(clientIndex, index);
+		}
 	}
 	
 	g_FloatTimer[clientIndex] = INVALID_HANDLE;
+	return Plugin_Handled;
 }
 
 Menu CreateSeedMenu(int client)
@@ -351,46 +447,78 @@ public int SeedMenuHandler(Menu menu, MenuAction action, int client, int selecti
 				menu.GetItem(selection, buffer, sizeof(buffer));
 				if(StrEqual(buffer, "rseed"))
 				{
-					g_iWeaponSeed[client][g_iIndex[client]] = -1;
-					RefreshWeapon(client, g_iIndex[client]);
-					CreateTimer(0.1, SeedMenuTimer, GetClientUserId(client));
+					if (EntWatch_HasSpecialItem(client))
+					{
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						g_iWeaponSeed[client][g_iIndex[client]] = -1;
+						RefreshWeapon(client, g_iIndex[client]);
+						CreateTimer(0.1, SeedMenuTimer, GetClientUserId(client));
+					}
 				}
 				else if (StrEqual(buffer, "cseed"))
 				{
-					g_bWaitingForSeed[client] = true;
-					PrintToChat(client, " %s \x04%t", g_ChatPrefix, "SeedInstruction");
+					if (EntWatch_HasSpecialItem(client))
+					{
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						g_bWaitingForSeed[client] = true;
+						CPrintToChat(client, " %s \x04%t", g_ChatPrefix, "SeedInstruction");
+					}
 				}
 				else if (StrEqual(buffer, "sseed"))
 				{
-					if(g_iSeedRandom[client][g_iIndex[client]] > 0) 
+					if (EntWatch_HasSpecialItem(client))
 					{
-						g_iWeaponSeed[client][g_iIndex[client]] = g_iSeedRandom[client][g_iIndex[client]];
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
 					}
-					g_iSeedRandom[client][g_iIndex[client]] = 0;
-					RefreshWeapon(client, g_iIndex[client]);
+					
+					else
+					{
+						if(g_iSeedRandom[client][g_iIndex[client]] > 0) 
+						{
+							g_iWeaponSeed[client][g_iIndex[client]] = g_iSeedRandom[client][g_iIndex[client]];
+						}
+						g_iSeedRandom[client][g_iIndex[client]] = 0;
+						RefreshWeapon(client, g_iIndex[client]);
 
-					char updateFields[256];
-					char weaponName[32];
-					RemoveWeaponPrefix(g_WeaponClasses[g_iIndex[client]], weaponName, sizeof(weaponName));
-					Format(updateFields, sizeof(updateFields), "%s_seed = %d", weaponName, g_iWeaponSeed[client][g_iIndex[client]]);
-					UpdatePlayerData(client, updateFields);
-					CreateTimer(0.1, SeedMenuTimer, GetClientUserId(client));
+						char updateFields[256];
+						char weaponName[32];
+						RemoveWeaponPrefix(g_WeaponClasses[g_iIndex[client]], weaponName, sizeof(weaponName));
+						Format(updateFields, sizeof(updateFields), "%s_seed = %d", weaponName, g_iWeaponSeed[client][g_iIndex[client]]);
+						UpdatePlayerData(client, updateFields);
+						CreateTimer(0.1, SeedMenuTimer, GetClientUserId(client));
 
-					PrintToChat(client, " %s \x04%t", g_ChatPrefix, "SeedSaved");
+						CPrintToChat(client, " %s \x04%t", g_ChatPrefix, "SeedSaved");
+					}
 				}
 				else if (StrEqual(buffer, "seedr"))
 				{
-					g_iWeaponSeed[client][g_iIndex[client]] = -1;
-					g_iSeedRandom[client][g_iIndex[client]] = 0;
+					if (EntWatch_HasSpecialItem(client))
+					{
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
 					
-					char updateFields[256];
-					char weaponName[32];
-					RemoveWeaponPrefix(g_WeaponClasses[g_iIndex[client]], weaponName, sizeof(weaponName));
-					Format(updateFields, sizeof(updateFields), "%s_seed = -1", weaponName);
-					UpdatePlayerData(client, updateFields);
-					CreateTimer(0.1, SeedMenuTimer, GetClientUserId(client));
+					else
+					{
+						g_iWeaponSeed[client][g_iIndex[client]] = -1;
+						g_iSeedRandom[client][g_iIndex[client]] = 0;
 					
-					PrintToChat(client, " %s \x04%t", g_ChatPrefix, "SeedReset");
+						char updateFields[256];
+						char weaponName[32];
+						RemoveWeaponPrefix(g_WeaponClasses[g_iIndex[client]], weaponName, sizeof(weaponName));
+						Format(updateFields, sizeof(updateFields), "%s_seed = -1", weaponName);
+						UpdatePlayerData(client, updateFields);
+						CreateTimer(0.1, SeedMenuTimer, GetClientUserId(client));
+					
+						CPrintToChat(client, " %s \x04%t", g_ChatPrefix, "SeedReset");
+					}
 				}
 			}
 		}
@@ -417,12 +545,23 @@ public Action SeedMenuTimer(Handle timer, int userid)
 	int clientIndex = GetClientOfUserId(userid);
 	if(IsValidClient(clientIndex))
 	{
-		int menuTime;
-		if((menuTime = GetRemainingGracePeriodSeconds(clientIndex)) >= 0)
+		if (EntWatch_HasSpecialItem(clientIndex))
 		{
-			CreateSeedMenu(clientIndex).Display(clientIndex, menuTime);
+			CPrintToChat(clientIndex, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+			return Plugin_Handled;
+		}
+		
+		else
+		{
+			int menuTime;
+			if((menuTime = GetRemainingGracePeriodSeconds(clientIndex)) >= 0)
+			{
+				CreateSeedMenu(clientIndex).Display(clientIndex, menuTime);
+				return Plugin_Handled;
+			}
 		}
 	}
+	return Plugin_Handled;
 }
 
 Menu CreateNameTagMenu(int client)
@@ -462,8 +601,16 @@ public int NameTagMenuHandler(Menu menu, MenuAction action, int client, int sele
 				menu.GetItem(selection, buffer, sizeof(buffer));
 				if(StrEqual(buffer, "nametag"))
 				{
-					g_bWaitingForNametag[client] = true;
-					PrintToChat(client, " %s \x04%t", g_ChatPrefix, "NameTagInstruction");
+					if (EntWatch_HasSpecialItem(client))
+					{
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						g_bWaitingForNametag[client] = true;
+						CPrintToChat(client, " %s \x04%t", g_ChatPrefix, "NameTagInstruction");
+					}
 				}
 				/* NAMETAGCOLOR
 				else if(StrEqual(buffer, "color"))
@@ -477,20 +624,28 @@ public int NameTagMenuHandler(Menu menu, MenuAction action, int client, int sele
 				*/
 				else if(StrEqual(buffer, "delete"))
 				{
-					g_NameTag[client][g_iIndex[client]] = "";
-					
-					char updateFields[256];
-					char weaponName[32];
-					RemoveWeaponPrefix(g_WeaponClasses[g_iIndex[client]], weaponName, sizeof(weaponName));
-					Format(updateFields, sizeof(updateFields), "%s_tag = ''", weaponName);
-					UpdatePlayerData(client, updateFields);
-					
-					RefreshWeapon(client, g_iIndex[client]);
-					
-					int menuTime;
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						CreateWeaponMenu(client).Display(client, menuTime);
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						g_NameTag[client][g_iIndex[client]] = "";
+					
+						char updateFields[256];
+						char weaponName[32];
+						RemoveWeaponPrefix(g_WeaponClasses[g_iIndex[client]], weaponName, sizeof(weaponName));
+						Format(updateFields, sizeof(updateFields), "%s_tag = ''", weaponName);
+						UpdatePlayerData(client, updateFields);
+					
+						RefreshWeapon(client, g_iIndex[client]);
+					
+						int menuTime;
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateWeaponMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 			}
@@ -641,14 +796,22 @@ public int AllWeaponsMenuHandler(Menu menu, MenuAction action, int client, int s
 		{
 			if(IsClientInGame(client))
 			{
-				char class[30];
-				menu.GetItem(selection, class, sizeof(class));
-				
-				g_smWeaponIndex.GetValue(class, g_iIndex[client]);
-				int menuTime;
-				if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+				if (EntWatch_HasSpecialItem(client))
 				{
-					CreateWeaponMenu(client).Display(client, menuTime);
+					CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+				}
+				
+				else
+				{
+					char class[30];
+					menu.GetItem(selection, class, sizeof(class));
+				
+					g_smWeaponIndex.GetValue(class, g_iIndex[client]);
+					int menuTime;
+					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					{
+						CreateWeaponMenu(client).Display(client, menuTime);
+					}
 				}
 			}
 		}
@@ -736,24 +899,48 @@ public int MainMenuHandler(Menu menu, MenuAction action, int client, int selecti
 				int menuTime;
 				if(StrEqual(info, "all"))
 				{
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						CreateAllWeaponsMenu(client).Display(client, menuTime);
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateAllWeaponsMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 				else if(StrEqual(info, "lang"))
 				{
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						CreateLanguageMenu(client).Display(client, menuTime);
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateLanguageMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 				else
 				{
-					g_smWeaponIndex.GetValue(info, g_iIndex[client]);
-					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					if (EntWatch_HasSpecialItem(client))
 					{
-						CreateWeaponMenu(client).Display(client, menuTime);
+						CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+					}
+					
+					else
+					{
+						g_smWeaponIndex.GetValue(info, g_iIndex[client]);
+						if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+						{
+							CreateWeaponMenu(client).Display(client, menuTime);
+						}
 					}
 				}
 			}
@@ -864,53 +1051,61 @@ public int KnifeMenuHandler(Menu menu, MenuAction menuaction, int client, int se
 		{
 			if(IsClientInGame(client))
 			{
-				char knifeIdStr[32];
-				menu.GetItem(selection, knifeIdStr, sizeof(knifeIdStr));
-				int knifeId = StringToInt(knifeIdStr);
-				
-				Action action = Plugin_Continue;
-				Call_StartForward(g_hOnKnifeSelect_Pre);
-				Call_PushCell(client);
-				Call_PushCell(knifeId);
-				if(knifeId == 0)
+				if (EntWatch_HasSpecialItem(client))
 				{
-					Call_PushString("weapon_knife");
+					CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
 				}
+				
 				else
 				{
-					Call_PushString(g_WeaponClasses[knifeId]);
-				}
-				Call_Finish(action);
+					char knifeIdStr[32];
+					menu.GetItem(selection, knifeIdStr, sizeof(knifeIdStr));
+					int knifeId = StringToInt(knifeIdStr);
+				
+					Action action = Plugin_Continue;
+					Call_StartForward(g_hOnKnifeSelect_Pre);
+					Call_PushCell(client);
+					Call_PushCell(knifeId);
+					if(knifeId == 0)
+					{
+						Call_PushString("weapon_knife");
+					}
+					else
+					{
+						Call_PushString(g_WeaponClasses[knifeId]);
+					}
+					Call_Finish(action);
 
-				if(action >= Plugin_Handled)
-				{
-					return;
-				}
+					if(action >= Plugin_Handled)
+					{
+						return;
+					}
 				
-				g_iKnife[client] = knifeId;
-				char updateFields[50];
-				Format(updateFields, sizeof(updateFields), "knife = %d", knifeId);
-				UpdatePlayerData(client, updateFields);
+					g_iKnife[client] = knifeId;
+					char updateFields[50];
+					Format(updateFields, sizeof(updateFields), "knife = %d", knifeId);
+					UpdatePlayerData(client, updateFields);
 				
-				RefreshWeapon(client, knifeId, knifeId == 0);
+					RefreshWeapon(client, knifeId, knifeId == 0);
 				
-				Call_StartForward(g_hOnKnifeSelect_Post);
-				Call_PushCell(client);
-				Call_PushCell(knifeId);
-				if(knifeId == 0)
-				{
-					Call_PushString("weapon_knife");
-				}
-				else
-				{
-					Call_PushString(g_WeaponClasses[knifeId]);
-				}
-				Call_Finish();
+					Call_StartForward(g_hOnKnifeSelect_Post);
+					Call_PushCell(client);
+					Call_PushCell(knifeId);
+					if(knifeId == 0)
+					{
+						Call_PushString("weapon_knife");
+					}
+					else
+					{
+						Call_PushString(g_WeaponClasses[knifeId]);
+					}
+					Call_Finish();
 				
-				int menuTime;
-				if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
-				{
-					CreateKnifeMenu(client).DisplayAt(client, GetMenuSelectionPosition(), menuTime);
+					int menuTime;
+					if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
+					{
+						CreateKnifeMenu(client).DisplayAt(client, GetMenuSelectionPosition(), menuTime);
+					}
 				}
 			}
 		}
@@ -947,11 +1142,19 @@ public int LanguageMenuHandler(Menu menu, MenuAction action, int client, int sel
 		{
 			if(IsClientInGame(client))
 			{
-				char langIndexStr[4];
-				menu.GetItem(selection, langIndexStr, sizeof(langIndexStr));
-				int langIndex = StringToInt(langIndexStr);
+				if (EntWatch_HasSpecialItem(client))
+				{
+					CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+				}
 				
-				g_iClientLanguage[client] = langIndex;
+				else
+				{
+					char langIndexStr[4];
+					menu.GetItem(selection, langIndexStr, sizeof(langIndexStr));
+					int langIndex = StringToInt(langIndexStr);
+				
+					g_iClientLanguage[client] = langIndex;
+				}
 			}
 		}
 		case MenuAction_End:

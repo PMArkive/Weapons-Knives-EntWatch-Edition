@@ -92,6 +92,7 @@ bool IsKnife(int entity)
 	return false;
 }
 
+/*
 int DefIndexByClass(char[] class)
 {
 	if (StrEqual(class, "weapon_knife"))
@@ -108,6 +109,7 @@ int DefIndexByClass(char[] class)
 		return index;
 	return 0;
 }
+*/
 
 void RemoveWeaponPrefix(const char[] source, char[] output, int size)
 {

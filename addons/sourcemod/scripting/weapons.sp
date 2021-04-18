@@ -21,6 +21,8 @@
 #include <cstrike>
 #include <PTaH>
 #include <weapons>
+#include <EntWatch>
+#include <multicolors>
 
 #pragma semicolon 1
 #pragma newdecls required
@@ -38,10 +40,10 @@
 
 public Plugin myinfo = 
 {
-	name = "Weapons & Knives",
-	author = "kgns | oyunhost.net",
+	name = "Weapons & Knives, Entwatch Edition",
+	author = "kgns | oyunhost.net, Oylsister",
 	description = "All in one weapon skin management",
-	version = "1.7.1",
+	version = "1.7.2",
 	url = "https://www.oyunhost.net"
 };
 
@@ -132,7 +134,7 @@ public Action Command_SetKnife(int client, int args)
 {
 	if(args != 2)
 	{
-		ReplyToCommand(client, "[SM] Usage: sm_setknife <playername> <weaponname>");
+		CReplyToCommand(client, "[SM] Usage: sm_setknife <playername> <weaponname>");
 		return Plugin_Handled;
 	}
 	char buffer[64];
@@ -140,16 +142,16 @@ public Action Command_SetKnife(int client, int args)
 	int target = FindTarget(client, buffer);
 	if(target == -1)
 	{
-		ReplyToCommand(client, "[SM] Please enter valid playername!");
+		CReplyToCommand(client, "[SM] Please enter valid playername!");
 		return Plugin_Handled;
 	}
 	GetCmdArg(2, buffer, sizeof(buffer));
 	if(SetClientKnife(target, buffer) == -1)
 	{
-		ReplyToCommand(client, "[SM] Knife %s is not valid.", buffer);
+		CReplyToCommand(client, "[SM] Knife %s is not valid.", buffer);
 		return Plugin_Handled;
 	}
-	ReplyToCommand(client, "[SM] Successfully set %N's knife.", target);
+	CReplyToCommand(client, "[SM] Successfully set %N's knife.", target);
 	return Plugin_Handled;
 }
 
@@ -157,7 +159,7 @@ public Action Command_GetClientKnife(int client, int args)
 {
 	if(args != 1)
 	{
-		ReplyToCommand(client, "[SM] Usage: sm_getknife <playername>");
+		CReplyToCommand(client, "[SM] Usage: sm_getknife <playername>");
 		return Plugin_Handled;
 	}
 	char buffer[32];
@@ -165,12 +167,12 @@ public Action Command_GetClientKnife(int client, int args)
 	int target = FindTarget(client, buffer);
 	if(target == -1)
 	{
-		ReplyToCommand(client, "[SM] Please enter valid playername!");
+		CReplyToCommand(client, "[SM] Please enter valid playername!");
 		return Plugin_Handled;
 	}
 	char sKnife[64];
 	GetClientKnife(client, sKnife, sizeof(sKnife));
-	ReplyToCommand(client, "[SM] %N's knife is %s.", target, sKnife);
+	CReplyToCommand(client, "[SM] %N's knife is %s.", target, sKnife);
 	return Plugin_Handled;
 }
 #endif
@@ -179,6 +181,12 @@ public Action CommandWeaponSkins(int client, int args)
 {
 	if (IsValidClient(client))
 	{
+		if (EntWatch_HasSpecialItem(client))
+		{
+			CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+			return Plugin_Handled;
+		}
+		
 		int menuTime;
 		if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
 		{
@@ -186,7 +194,7 @@ public Action CommandWeaponSkins(int client, int args)
 		}
 		else
 		{
-			PrintToChat(client, " %s \x02%t", g_ChatPrefix, "GracePeriod", g_iGracePeriod);
+			CPrintToChat(client, " %s \x02%t", g_ChatPrefix, "GracePeriod", g_iGracePeriod);
 		}
 	}
 	return Plugin_Handled;
@@ -194,12 +202,18 @@ public Action CommandWeaponSkins(int client, int args)
 
 public Action CommandSeedMenu(int client, int args)
 {
-	if(!g_bEnableSeed)
+	if (EntWatch_HasSpecialItem(client))
 	{
-		ReplyToCommand(client, " %s \x02%T", g_ChatPrefix, "SeedDisabled", client);
+		CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
 		return Plugin_Handled;
 	}
-	ReplyToCommand(client, " %s \x04%T", g_ChatPrefix, "SeedExplanation", client);
+	
+	if(!g_bEnableSeed)
+	{
+		CReplyToCommand(client, " %s \x02%T", g_ChatPrefix, "SeedDisabled", client);
+		return Plugin_Handled;
+	}
+	CReplyToCommand(client, " %s \x04%T", g_ChatPrefix, "SeedExplanation", client);
 	return Plugin_Handled;
 }
 
@@ -207,6 +221,12 @@ public Action CommandKnife(int client, int args)
 {
 	if (IsValidClient(client))
 	{
+		if (EntWatch_HasSpecialItem(client))
+		{
+			CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+			return Plugin_Handled;
+		}
+		
 		int menuTime;
 		if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
 		{
@@ -214,7 +234,7 @@ public Action CommandKnife(int client, int args)
 		}
 		else
 		{
-			PrintToChat(client, " %s \x02%t", g_ChatPrefix, "GracePeriod", g_iGracePeriod);
+			CPrintToChat(client, " %s \x02%t", g_ChatPrefix, "GracePeriod", g_iGracePeriod);
 		}
 	}
 	return Plugin_Handled;
@@ -224,6 +244,12 @@ public Action CommandWSLang(int client, int args)
 {
 	if (IsValidClient(client))
 	{
+		if (EntWatch_HasSpecialItem(client))
+		{
+			CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
+			return Plugin_Handled;
+		}
+		
 		int menuTime;
 		if((menuTime = GetRemainingGracePeriodSeconds(client)) >= 0)
 		{
@@ -231,7 +257,7 @@ public Action CommandWSLang(int client, int args)
 		}
 		else
 		{
-			PrintToChat(client, " %s \x02%t", g_ChatPrefix, "GracePeriod", g_iGracePeriod);
+			CPrintToChat(client, " %s \x02%t", g_ChatPrefix, "GracePeriod", g_iGracePeriod);
 		}
 	}
 	return Plugin_Handled;
@@ -239,12 +265,18 @@ public Action CommandWSLang(int client, int args)
 
 public Action CommandNameTag(int client, int args)
 {
-	if(!g_bEnableNameTag)
+	if (EntWatch_HasSpecialItem(client))
 	{
-		ReplyToCommand(client, " %s \x02%T", g_ChatPrefix, "NameTagDisabled", client);
+		CPrintToChat(client, " %s You can't use this command while holding the \x10EntWatch \x07item\x01!", g_ChatPrefix);
 		return Plugin_Handled;
 	}
-	ReplyToCommand(client, " %s \x04%T", g_ChatPrefix, "NameTagNew", client);
+	
+	if(!g_bEnableNameTag)
+	{
+		CReplyToCommand(client, " %s \x02%T", g_ChatPrefix, "NameTagDisabled", client);
+		return Plugin_Handled;
+	}
+	CReplyToCommand(client, " %s \x04%T", g_ChatPrefix, "NameTagNew", client);
 	return Plugin_Handled;
 }
 

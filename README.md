@@ -1,4 +1,13 @@
-# Weapons & Knives for CS:GO Community Servers
+# Weapons & Knives for CS:GO Community Servers EntWatch Edition
+
+### What is EntWatch Edition?
+
+Nowaday Many Zombie Escape Start to use Weapons & Knives plugin on the server, But the issues is occured when player try to change their weapon or knife during holding the item that got configured by EntWatch plugin or even try to exploit it.
+Make the map item become unusable. To solve this issues, we have to apply the EntWatch api on the weapons & knives command.
+
+You don't have to use this, if your server is not Zombie Escape.
+
+Current EntWatch that plugin supported with: https://github.com/darkerz7/CSGO-Plugins/tree/master/EntWatch_DZ
 
 [![](https://img.shields.io/github/license/kgns/weapons.svg?style=flat-square)](https://github.com/kgns/weapons/blob/master/LICENSE)
 [![Build Status](https://build.kgns.dev/job/csgo-weapons/badge/icon?style=flat-square)](https://build.kgns.dev/job/csgo-weapons)
