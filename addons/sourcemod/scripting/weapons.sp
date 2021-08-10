@@ -43,7 +43,7 @@ public Plugin myinfo =
 	name = "Weapons & Knives, Entwatch Edition",
 	author = "kgns | oyunhost.net, Oylsister",
 	description = "All in one weapon skin management",
-	version = "1.7.2",
+	version = "1.7.3",
 	url = "https://www.oyunhost.net"
 };
 
