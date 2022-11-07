@@ -43,9 +43,14 @@ int GetRandomSkin(int client, int index)
 {
 	int max = menuWeapons[g_iClientLanguage[client]][index].ItemCount;
 	int random = GetRandomInt(2, max);
-	char idStr[4];
+	char idStr[6];
 	menuWeapons[g_iClientLanguage[client]][index].GetItem(random, idStr, sizeof(idStr));
 	return StringToInt(idStr);
+}
+
+int GetRandomKnife()
+{
+	return g_iKnifeIndices[GetRandomInt(0, sizeof(g_iKnifeIndices) - 1)];
 }
 
 bool IsValidClient(int client)
@@ -92,6 +97,7 @@ bool IsKnife(int entity)
 	return false;
 }
 
+/*
 int DefIndexByClass(char[] class)
 {
 	if (StrEqual(class, "weapon_knife"))
@@ -108,6 +114,7 @@ int DefIndexByClass(char[] class)
 		return index;
 	return 0;
 }
+*/
 
 void RemoveWeaponPrefix(const char[] source, char[] output, int size)
 {
@@ -198,6 +205,10 @@ void GetClientKnife(int client, char[] KnifeName, int Size)
 	if(g_iKnife[client] == 0)
 	{
 		Format(KnifeName, Size, "weapon_knife");
+	}
+	else if(g_iKnife[client] == -1)
+	{
+		Format(KnifeName, Size, "random");
 	}
 	else
 	{

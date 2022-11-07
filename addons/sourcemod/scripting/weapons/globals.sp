@@ -35,6 +35,10 @@ int g_iWeaponDefIndex[] = {
 /*50*/ 518, /*51*/ 521, /*52*/ 525
 };
 
+int g_iKnifeIndices[] = {
+	33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 48, 49, 50, 51, 52
+};
+
 const int MAX_LANG = 40;
 
 Database db = null;
@@ -119,3 +123,6 @@ Menu menuWeapons[MAX_LANG][sizeof(g_WeaponClasses)];
 StringMap g_smWeaponIndex;
 StringMap g_smWeaponDefIndex;
 StringMap g_smLanguageIndex;
+
+GlobalForward g_hOnKnifeSelect_Pre;
+GlobalForward g_hOnKnifeSelect_Post;
