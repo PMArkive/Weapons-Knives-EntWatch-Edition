@@ -1,0 +1,1647 @@
+[33mcommit 28e7b3b9d8ac06ea3133f0642f504c44770b9b03[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: d08f665 d2017bf
+Author: Oylsister <57207701+oylsister@users.noreply.github.com>
+Date:   Thu Jul 7 21:40:25 2022 +0700
+
+    Merge branch 'kgns:master' into master
+
+[33mcommit d2017bfd7486905ce369babbe497f928f9aa62a0[m[33m ([m[1;33mtag: v1.7.7[m[33m)[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Sat Jul 2 07:42:50 2022 +0300
+
+    version bump
+
+[33mcommit 6779513efe5b72df31531abab2a08f26305c9a96[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Sat Jul 2 07:23:50 2022 +0300
+
+    recoil case skins
+
+[33mcommit d08f665c10a4d169e7152c9046aed18ab964f1a9[m
+Merge: 043b2c0 c34346f
+Author: Oylsister <57207701+oylsister@users.noreply.github.com>
+Date:   Tue Mar 29 15:08:15 2022 +0700
+
+    Merge branch 'kgns:master' into master
+
+[33mcommit 043b2c0ba653462159cee1a7c143df6cde8c6df1[m
+Author: Oylsister <57207701+oylsister@users.noreply.github.com>
+Date:   Tue Mar 29 15:08:06 2022 +0700
+
+    Update weapons.sp
+
+[33mcommit c34346f39fef5ab4f9a91a5d7905279d5b8ba3d3[m[33m ([m[1;33mtag: v1.7.6[m[33m)[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Fri Jan 21 10:43:36 2022 +0300
+
+    updated plugin info section for new version
+
+[33mcommit 66f4e319d0ed68c8e7fa1dda802298cb98692d4d[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Fri Jan 21 10:20:57 2022 +0300
+
+    dreams & nightmares case skins
+
+[33mcommit e8bc23983ec1ebbc1d2cf1824856a22fec1c559c[m
+Merge: 8b1f1a4 a415cbe
+Author: Oylsister <57207701+oylsister@users.noreply.github.com>
+Date:   Thu Sep 23 10:29:22 2021 +0700
+
+    Merge branch 'kgns:master' into master
+
+[33mcommit a415cbe8149c34b5def88b321d6bb54ed7c97253[m[33m ([m[1;33mtag: v1.7.5[m[33m)[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Thu Sep 23 00:08:11 2021 +0300
+
+    version bump
+
+[33mcommit de80af6381384f659e4813290fd64121db624a4c[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Thu Sep 23 00:07:49 2021 +0300
+
+    fixed a bug with random skins and skin ids above 999 (thanks to @yrkn for reporting)
+
+[33mcommit 17ce75400573aa3879302dbbc797b0a409ee7576[m[33m ([m[1;33mtag: v1.7.4[m[33m)[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Wed Sep 22 18:13:19 2021 +0300
+
+    operation riptide skins
+
+[33mcommit 8b1f1a47d393412b344165c16dd6f6d5341573b4[m
+Merge: 45e7971 6799bd6
+Author: Oylsister <57207701+oylsister@users.noreply.github.com>
+Date:   Tue Aug 10 22:31:14 2021 +0700
+
+    Merge pull request #2 from kgns/master
+    
+    snakebite case skins translations updated by valve
+
+[33mcommit 6799bd66375f5c032d9563b6545aaf7b13676923[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Fri May 14 03:33:21 2021 +0300
+
+    snakebite case skins translations updated by valve
+
+[33mcommit 45e79715600972b87aa793c9a6d2e0e4ed870895[m
+Merge: 24cece7 bac65cf
+Author: Oylsister <57207701+oylsister@users.noreply.github.com>
+Date:   Wed May 5 00:30:52 2021 +0700
+
+    Merge pull request #1 from kgns/master
+    
+    Merge New Version
+
+[33mcommit bac65cf21def021d4e6dd428620c5498ed868261[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Tue May 4 05:12:08 2021 +0300
+
+    version bump
+
+[33mcommit ce6dc73d3e8de2c48084e35382b510822c4ff7be[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Tue May 4 05:11:57 2021 +0300
+
+    snakebite case configs
+
+[33mcommit 24cece726e2592d8556a2a65a9ea1f7fed96af35[m
+Author: unknown <57207701+oylsister@users.noreply.github.com>
+Date:   Sun Apr 18 13:07:30 2021 +0700
+
+    Added Compiled Plugin
+
+[33mcommit d23b397c97caa07b2a3ba3987e1c33c7b1c962df[m
+Author: unknown <57207701+oylsister@users.noreply.github.com>
+Date:   Sun Apr 18 13:06:20 2021 +0700
+
+    Allow Language I guess
+
+[33mcommit 80e0c357a2ee1bc93b5c6405937afc98fb49f0b6[m
+Author: unknown <57207701+oylsister@users.noreply.github.com>
+Date:   Sun Apr 18 13:02:36 2021 +0700
+
+    Added compiled plugin
+
+[33mcommit c7aa1d999dd8236d0d603ecf1d8f9400417f66c7[m[33m ([m[1;33mtag: v1.7.2[m[33m)[m
+Author: unknown <57207701+oylsister@users.noreply.github.com>
+Date:   Sun Apr 18 12:53:50 2021 +0700
+
+    Added Include and API for EntWatch
+
+[33mcommit 545c5ccc475a991ce782fdc3478cdfe1c3a4f40c[m[33m ([m[1;33mtag: v1.7.1[m[33m)[m
+Merge: d623b06 230d9a4
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Fri Dec 4 11:32:57 2020 +0300
+
+    Merge pull request #192 from crashzk/master
+    
+    Update Translations Portuguese-BR & English
+
+[33mcommit d623b06ea66477e17269f5f8331183b2715e75e8[m
+Merge: e6a3419 3600412
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Fri Dec 4 10:27:26 2020 +0300
+
+    Merge pull request #204 from Shaneajm/master
+    
+    Increase Index
+
+[33mcommit 360041260dee00990fd1597644a9a23d962a49a0[m
+Author: Shaneajm <shane@shaneajm.com>
+Date:   Thu Dec 3 23:58:46 2020 -0700
+
+    increase index
+
+[33mcommit e6a3419e8b4ffec038b75a6e69689eac630d85e2[m
+Author: Kagan Ustungel <kagan.ustungel@gmail.com>
+Date:   Fri Dec 4 05:30:33 2020 +0300
+
+    bump a minor version
+
+[33mcommit 6266325a4a502a3959f42699572479e1569a4a97[m
+Author: Kagan Ustungel <kagan.ustungel@gmail.com>
+Date:   Fri Dec 4 05:29:53 2020 +0300
+
+    operation broken fang skins
+
+[33mcommit 230d9a47c4aee8d53967c6bd039e51928773de0b[m
+Author: crashzk <contato@zkservidores.com>
+Date:   Fri Aug 28 01:51:40 2020 -0300
+
+    Update weapons.phrases.txt
+
+[33mcommit cfdbdb9d31c94911da1d20614470692e5d7387d0[m
+Author: crashzk <contato@zkservidores.com>
+Date:   Fri Aug 28 01:49:49 2020 -0300
+
+    Update weapons.phrases.txt
+
+[33mcommit 10b4a2638b42d364bb87a9c063472c1b6cc62b10[m
+Author: crashzk <contato@zkservidores.com>
+Date:   Fri Aug 28 01:38:58 2020 -0300
+
+    Fix Translations
+
+[33mcommit ca68ea58f37c0de84e862d3a0ac9b929dca13633[m
+Author: crashzk <contato@zkservidores.com>
+Date:   Thu Aug 27 23:45:44 2020 -0300
+
+    Update weapons.phrases.txt
+
+[33mcommit fad93a864e3a69309db14c74c2aec63f991a0eba[m
+Author: crashzk <contato@zkservidores.com>
+Date:   Thu Aug 27 23:42:34 2020 -0300
+
+    Update weapons.phrases.txt
+
+[33mcommit e0fae9a0f92f023a075046fe250734c1dd7f8722[m
+Author: crashzk <contato@zkservidores.com>
+Date:   Thu Aug 27 22:56:59 2020 -0300
+
+    Update weapons.phrases.txt
+
+[33mcommit 820840446774fce420e6f9a23cacf445d1bbf750[m
+Author: crashzk <contato@zkservidores.com>
+Date:   Thu Aug 27 22:54:17 2020 -0300
+
+    Fix Translations
+
+[33mcommit 2f4c16a45d4a1605f518c9229a47e891461c9d83[m
+Author: crashzk <contato@zkservidores.com>
+Date:   Sun Aug 23 19:57:03 2020 -0300
+
+    Update Translations Portuguese-BR
+
+[33mcommit b3cea94fb710fb61fa77680dc37ce849f942b3a3[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Aug 22 17:25:30 2020 +0300
+
+    fixes for PR #187
+
+[33mcommit bf73d9af6f69be59dca1a1ea7c0cef8c716c8123[m
+Merge: a0682ce 0026f58
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Fri Aug 21 20:00:17 2020 +0300
+
+    Merge pull request #187 from Cruze03/master
+    
+    2 new forwards and 1 new native
+
+[33mcommit 0026f58a540caf55eb0aaabff08fee085385f19a[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Sun Aug 16 23:37:45 2020 +0530
+
+    Update natives.sp
+
+[33mcommit 07f5b50ab3f04bb495d7dea801e435462fa5c451[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Sun Aug 16 23:37:26 2020 +0530
+
+    Update weapons.inc
+
+[33mcommit c9c0d900ee488b297badcdbf2d5218ea05293c1a[m
+Merge: 133b754 a0682ce
+Author: Sachin <sachinfnatic@gmail.com>
+Date:   Fri Aug 7 23:22:29 2020 +0530
+
+    Merge remote-tracking branch 'upstream/master' into master
+
+[33mcommit a0682ce4daa4d110788ce816d1b768631e1f6404[m[33m ([m[1;33mtag: v1.7.0[m[33m)[m
+Merge: 2452fc0 0cae661
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Aug 7 08:23:30 2020 +0300
+
+    Merge branch 'release/v1.7.0'
+
+[33mcommit 0cae661382317bdb8d5476fc4335f9772d38001f[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Aug 7 08:22:49 2020 +0300
+
+    bump version
+
+[33mcommit 401b6a14391e9622ba17e2ae76486b00702a5b8c[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Aug 7 08:19:40 2020 +0300
+
+    forgot to fire OnClientPutInServer forward as it's not automatically fired after a plugin reload
+
+[33mcommit bea8d18cbb63c73a09f1d084632c484e919db426[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Aug 7 06:20:31 2020 +0300
+
+    disable grace timer if we are in the warmup round
+
+[33mcommit 5fde944c47648482e0e146c03ff4c0fe30faef22[m[33m ([m[1;31morigin/feature/fractureCase[m[33m)[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Aug 7 05:55:15 2020 +0300
+
+    fracture case skins
+
+[33mcommit 133b754a0e76165ef51d6793200623690ef6c558[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Tue Aug 4 21:24:44 2020 +0530
+
+    Update weapons.inc
+
+[33mcommit dba5010c9ef0b3264283d97c0db68e0ef38cbf47[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Tue Aug 4 21:14:21 2020 +0530
+
+    Update menus.sp
+
+[33mcommit 9607a16218fba2322abeb8d45d5a797cae55f691[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Tue Aug 4 21:13:56 2020 +0530
+
+    Update natives.sp
+
+[33mcommit 9959e7f5627ab6a6c9039a59daa344f57dc65144[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Tue Aug 4 21:13:28 2020 +0530
+
+    Update weapons.sp
+
+[33mcommit 216463f88b4c891dcfeaf4362bc989217e9c545e[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Tue Aug 4 09:05:31 2020 +0300
+
+    typo
+
+[33mcommit 15ee277b97bb77fe17df72c1bfc70b1d767b1dd8[m
+Merge: 352fd22 2452fc0
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Aug 3 21:42:17 2020 +0300
+
+    Merge remote-tracking branch 'origin/master' into dev
+    
+    # Conflicts:
+    #       addons/sourcemod/scripting/weapons.sp
+
+[33mcommit 2452fc03aec03d999892dbfc5a1cbee849812d65[m
+Merge: fb093ef 9c712f1
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Mon Aug 3 21:37:23 2020 +0300
+
+    Merge pull request #186 from Cruze03/master
+    
+    Added 2 new natives (Weapons_GetClientKnife and Weapons_SetClientKnife)
+
+[33mcommit 9c712f1557c5883551b8c1df9be4ca2c497a44c7[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 11:12:09 2020 +0530
+
+    reverted to how it was
+
+[33mcommit 1fc497f604c456f0042f953f157da3972c76ac88[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 11:10:59 2020 +0530
+
+    Delete weapons.smx
+
+[33mcommit 6b36cfaa8addafd51b99ca7d5826c83c1019a5a2[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 11:10:42 2020 +0530
+
+    Adding the update parameter
+
+[33mcommit 1703a88584ab6703441718bc10b61efcfd7397a5[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 11:10:08 2020 +0530
+
+    came from natives.sp
+
+[33mcommit 98f991f9cdc15901ee8a19bce84179f53965fa27[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 11:09:38 2020 +0530
+
+    Moved SetClientKnife and GetClientKnife to helpers.sp
+    
+    Also added 'update' parameter in `Weapons_SetClientKnife` for whether to update the respective knife in target's mysql table too?
+
+[33mcommit b913b02a5299222cd047eb10e927a977b5fd0cea[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 11:07:23 2020 +0530
+
+    reverting version number ;-;
+
+[33mcommit 352fd2246d9d638571125cc3dd5e7daf28b4b225[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Aug 3 04:05:25 2020 +0300
+
+    clear plugin data when players disconnect, so that new players start with a fresh set of data before the database query for their data is run threaded
+
+[33mcommit 3f7c789729e6414fa5107176662ead0f4cf3fe91[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Aug 3 04:02:36 2020 +0300
+
+    use GetSteamAccountID instead of parsing AuthId_Steam3 of player
+
+[33mcommit 532c1ae5cc9b10f6d8f45a1882854a0d6861e980[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Aug 3 02:13:15 2020 +0300
+
+    delete does these already
+
+[33mcommit 14227772f5c495da37f81b8d4b548163fa8b3451[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 02:14:58 2020 +0530
+
+    1.6.1
+
+[33mcommit 3c6165560ca4f0a6ea4fccbac04022c764669b3d[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 02:13:14 2020 +0530
+
+    small fix
+
+[33mcommit 09252d2e3b5fd1d01404b69338f8176923a24ef7[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 02:12:38 2020 +0530
+
+    small issue
+
+[33mcommit afa84e5d94f8277c787d7a17111a25fceac1a575[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 02:07:58 2020 +0530
+
+    Added 2 natives
+
+[33mcommit 7365198f39eed456257c2c969f195a57166ff902[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 02:06:38 2020 +0530
+
+    Added 2 new natives
+
+[33mcommit 0e252a6bc9237fed7ae9d9b35367cba0a672037d[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 02:05:52 2020 +0530
+
+    Fix by 8guawong
+
+[33mcommit 48b41007e942762cd5e1d2d294dc6aeb534e53c9[m
+Author: Sachin <31343375+Cruze03@users.noreply.github.com>
+Date:   Mon Aug 3 02:04:55 2020 +0530
+
+    Added 2 natives
+
+[33mcommit 8dd869507a2620615a92bfce4f1163ec87cf3f1e[m
+Merge: 0c3175a fb093ef
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Apr 1 17:15:36 2020 +0300
+
+    Merge tag 'v1.6.0' into dev
+    
+    v1.6.0
+
+[33mcommit fb093efafbcd9f3087701c932f3e374115349719[m[33m ([m[1;33mtag: v1.6.0[m[33m)[m
+Merge: 1490814 7f4e5c5
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Apr 1 17:15:35 2020 +0300
+
+    Merge branch 'release/v1.6.0'
+
+[33mcommit 7f4e5c5847b90ace8186b71652bf40825f7d5b65[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Apr 1 17:15:01 2020 +0300
+
+    small fixes
+
+[33mcommit 0c3175a626e6849d9c6c37c47d6f1ba9f5439a9d[m[33m ([m[1;31morigin/feature/prisma2case[m[33m)[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Apr 1 05:00:36 2020 +0300
+
+    prisma 2 case skins config
+
+[33mcommit 1490814d154c4c2122fc988a6b558a188ecd8702[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Nov 23 03:34:32 2019 +0300
+
+    added alliedmodders forum link to readme
+
+[33mcommit 83d50f864896e025b8b5de0b18e4bbfb7703bf71[m
+Merge: 2d4cb44 4dfbee2
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Wed Nov 20 14:36:50 2019 +0300
+
+    Merge pull request #135 from Roy47Zhang/patch-6
+    
+    Update weapons.phrases.txt
+
+[33mcommit 4dfbee2e9ffd2371fb0a72971b3e3aea00db35af[m
+Author: RoyZhang <zcy009@outlook.com>
+Date:   Wed Nov 20 16:48:25 2019 +0800
+
+    update chi translations
+    
+    update chi translations for shatteredweb
+
+[33mcommit 0d6684eec570b9c8bdbf399e8ff22c96d952a851[m
+Author: RoyZhang <zcy009@outlook.com>
+Date:   Wed Nov 20 16:38:52 2019 +0800
+
+    Update weapons.phrases.txt
+    
+    update chi translations for shatteredweb
+
+[33mcommit 0f9d2f6cc7d6d16edd934a706efec65429b05b7c[m
+Merge: 2fdfc01 2d4cb44
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Nov 20 10:30:07 2019 +0300
+
+    Merge tag 'v1.5.0' into dev
+    
+    v1.5.0
+
+[33mcommit 2d4cb44b1763c97d92ce1bb243c16c81bae78aa1[m[33m ([m[1;33mtag: v1.5.0[m[33m)[m
+Merge: 072cc40 eab65ef
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Nov 20 10:30:06 2019 +0300
+
+    Merge branch 'release/v1.5.0'
+
+[33mcommit eab65efbc6519ef8a5f3c637600a351c39f93e5b[m[33m ([m[1;31morigin/release/v1.5.0[m[33m)[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Nov 20 10:29:35 2019 +0300
+
+    set release version
+
+[33mcommit 2fdfc016bf7f3f020a02c058df54302b75f4dceb[m
+Merge: b35b676 1b9cfbb
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Nov 20 10:28:08 2019 +0300
+
+    Merge branch 'feature/operationShatteredWeb' into dev
+
+[33mcommit 1b9cfbb366814757899d6f4bd6c5b1b25a47c329[m[33m ([m[1;31morigin/feature/operationShatteredWeb[m[33m)[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Nov 20 10:26:59 2019 +0300
+
+    operation shattered web skins update
+
+[33mcommit aa2da7665a7d634bc4d2ecda8d4f54a0145e77a7[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Wed Nov 20 10:26:41 2019 +0300
+
+    operation shattered web knives update
+
+[33mcommit b35b676c19f0eab9e4c6ff5534d57658576d7ae2[m
+Merge: 212619e 072cc40
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 19:27:43 2019 +0300
+
+    Merge tag 'v1.4.2' into dev
+    
+    v1.4.2
+
+[33mcommit 072cc40a18f75807e381729739bfee6ff6fd593d[m[33m ([m[1;33mtag: v1.4.2[m[33m)[m
+Merge: 8e3f6a4 62f26e8
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 19:27:42 2019 +0300
+
+    Merge branch 'hotfix/v1.4.2'
+
+[33mcommit 62f26e83d78c9c5bc936d93b870b5e2a70b8f4a3[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 19:24:31 2019 +0300
+
+    version bump
+
+[33mcommit 8e3f6a4025dea5e60fa222903de34089a28036bb[m
+Merge: f3c9853 27bdc1d
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 19:17:58 2019 +0300
+
+    Merge pull request #115 from Roy47Zhang/patch-5
+    
+    update chinese translations
+
+[33mcommit 212619e399723742be9d03501f1d9bf3f1b9b1fe[m
+Merge: 54a2d14 f3c9853
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 19:13:15 2019 +0300
+
+    Merge tag 'v1.4.2' into dev
+    
+    v1.4.2
+
+[33mcommit f3c98530a08f908030d69dda2a9b34cf96b2c5ce[m
+Merge: 54a2d14 8ce775d
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 19:13:14 2019 +0300
+
+    Merge branch 'hotfix/v1.4.2'
+
+[33mcommit 8ce775d78fa76030dff8ef16728aa10c2dcc9ff5[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 19:00:38 2019 +0300
+
+    database fix for SQLite
+
+[33mcommit 27bdc1d2802ca05c0f374f0df4acc20c49024e93[m
+Author: RoyZhang <zcy009@outlook.com>
+Date:   Sat Oct 19 16:45:09 2019 +0800
+
+    update chinese translations
+    
+    add seed menu & weapon_knife_css support
+
+[33mcommit 54a2d148e8c9ea8b861a1e5d681107c19a2ebbe8[m[33m ([m[1;33mtag: v1.4.1[m[33m)[m
+Merge: cec8874 55d035d
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 06:24:49 2019 +0300
+
+    Merge branch 'release/v1.4.1'
+    
+    # Conflicts:
+    #       addons/sourcemod/scripting/weapons/database.sp
+
+[33mcommit 55d035d2a45e07cc0027e363551c65c19ccc08ae[m[33m ([m[1;31morigin/release/v1.4.1[m[33m)[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 06:15:28 2019 +0300
+
+    version bump
+
+[33mcommit cec8874db61cdefab8200a96c6c4d93d43544ca8[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 06:12:43 2019 +0300
+
+    remove all skins option as i dont want that supported officially. also it can be achieved by simply modifying config files (add every weapon to every skin available)
+    removed !seed command, added reset seed option and some other fixes
+
+[33mcommit b5c9b4fedc867fe9747d1768727bec9ef1c43e69[m
+Merge: 0703fbd 02bd9d0
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 04:02:09 2019 +0300
+
+    Merge branch 'master' of https://github.com/Shane1390/weapons
+
+[33mcommit 0c394e1385f7c51fe558592de0645926a37f8e9f[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Sat Oct 19 02:31:58 2019 +0300
+
+    cs20 case
+
+[33mcommit 0703fbd85613c4b1b3c5c7e830be67887170506c[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Mon Aug 12 02:12:14 2019 +0300
+
+    changed jenkins url
+
+[33mcommit 02bd9d01e70bb87215420ba30e66a464cad4f620[m
+Author: Shane <camnothin0@gmail.com>
+Date:   Tue Aug 6 04:14:59 2019 +1000
+
+    fixed translation syntax error
+
+[33mcommit f8eb1bce17a2861428e7f27113f1f36119601f5d[m
+Author: Shane <camnothin0@gmail.com>
+Date:   Sun Aug 4 18:58:11 2019 +1000
+
+    translations compatibility added
+
+[33mcommit a7ef1bda551a3b6bbbcaea7e3ebbee37f2af7a12[m
+Author: Shane <camnothin0@gmail.com>
+Date:   Sun Aug 4 17:11:38 2019 +1000
+
+    config options added to cfg
+
+[33mcommit 1e5a15e4b448fd0d8fbfcdeea238d377717693c9[m
+Author: Shane <camnothin0@gmail.com>
+Date:   Sun Aug 4 17:08:08 2019 +1000
+
+    loose indentation fixed
+
+[33mcommit eaf09ca703c3d754fd2760ab9e654b48c391aaa8[m
+Author: Shane1390 <camnothin0@gmail.com>
+Date:   Sat Aug 3 02:22:21 2019 +1000
+
+    shadowed variable fixed
+
+[33mcommit 14bc83304ddefe0697f388b593e6c6149eb2ae91[m
+Author: Shane1390 <camnothin0@gmail.com>
+Date:   Sat Aug 3 02:22:07 2019 +1000
+
+    convars added
+    
+    sm_weapons_enable_seed "1"
+    sm_weapons_enable_allskins "1"
+
+[33mcommit b05d12fc0910f9521728a9cc637a4e9f95aca545[m
+Author: Shane1390 <camnothin0@gmail.com>
+Date:   Sat Aug 3 01:13:47 2019 +1000
+
+    PTaH 1.1.0 support
+    
+    essentially merged kgn's new changes
+
+[33mcommit 3affa3f44a14826c872569290b42a5f5c6f44594[m
+Merge: ddf921d fbd0a9b
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Jul 22 20:50:34 2019 +0300
+
+    Merge tag 'v1.4.0' into dev
+    
+    v1.4.0
+
+[33mcommit fbd0a9b4292686b5088fb36ffa9f7659b21aa8ef[m[33m ([m[1;33mtag: v1.4.0[m[33m)[m
+Merge: 5b4a297 3ed0f5f
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Jul 22 20:50:34 2019 +0300
+
+    Merge branch 'release/v1.4.0'
+
+[33mcommit 3ed0f5fbdcb228c7f6337efe89bf7127232b73f1[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Jul 22 20:33:36 2019 +0300
+
+    PTaH 1.1.0 patch minor touches
+
+[33mcommit ddf921dda19f95a2c00702291b40a5c90e54c7f9[m
+Merge: 0b1fb6a 5b4a297
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Jul 22 20:20:54 2019 +0300
+
+    Merge branch 'master' into dev
+
+[33mcommit 5b4a2971a14917580885ccccdf75d41a8aaf8961[m
+Merge: 6cf3d68 d960b8f
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Mon Jul 22 19:48:35 2019 +0300
+
+    Merge pull request #97 from komashchenko/PTaH-1.1.0
+    
+    PTaH 1.1.0 support
+
+[33mcommit d960b8ff7e17df640e7dad674d0ad72a5ba42487[m
+Author: Boris <b.komashchenko@gmail.com>
+Date:   Mon Jul 22 13:57:59 2019 +0300
+
+    Update hooks.sp
+    
+    public is not required for these hooks, since the function is passed by reference, and if there is a global forward with the same name, this can cause errors
+
+[33mcommit 274d1bcf0d8ebc96f5cf8953db3c65b1a4d07828[m
+Author: Boris <b.komashchenko@gmail.com>
+Date:   Mon Jul 22 13:52:04 2019 +0300
+
+    PTaH 1.1.0 support
+
+[33mcommit 6cf3d68eebba8a4c25c8403d80ae783e632c4135[m
+Merge: 212fdf7 00ef33c
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Wed Jun 12 13:21:38 2019 +0300
+
+    Merge pull request #92 from Roy47Zhang/patch-1
+    
+    improved Simplified Chinese translation
+
+[33mcommit 00ef33cd451f9429179b0e1f98488147a432ae3d[m
+Author: RoyZhang <zcy009@outlook.com>
+Date:   Wed Jun 12 08:23:07 2019 +0800
+
+    Update weapons.phrases.txt
+    
+    Improve Simplified Chinese translation
+
+[33mcommit 212fdf7da90581ad9b537846af67f94c6b719b68[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Mon Jun 10 13:23:09 2019 +0300
+
+    Update README.md
+    
+    hits statistic was not working
+
+[33mcommit 8e8918ad7cfab7891418692c8122dea84cb612ee[m
+Merge: 06f75f7 0f2c9a9
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Mon Jun 10 13:16:03 2019 +0300
+
+    Merge pull request #88 from LemonPAKA/master
+    
+    Simplified Chinese by lemonpaka
+
+[33mcommit 0f2c9a9708bfef33b4af7ecf074a78bda3cf8eaf[m
+Author: LemonPAKA <784505254@qq.com>
+Date:   Thu May 9 22:06:20 2019 +0800
+
+    Simplified Chinese by lemonpaka
+
+[33mcommit 0b1fb6a66386a92b69bc385791b4eae37492f623[m
+Merge: a9f8dc7 06f75f7
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Thu Mar 14 06:10:35 2019 +0300
+
+    Merge tag 'v1.3.3' into dev
+    
+    v1.3.3
+
+[33mcommit 06f75f72d9d038a8fb4600bb854c7497daf3c383[m[33m ([m[1;33mtag: v1.3.3[m[33m)[m
+Merge: e044ae6 0af145d
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Thu Mar 14 06:10:34 2019 +0300
+
+    Merge branch 'hotfix/v1.3.3'
+
+[33mcommit 0af145dd8bbc5a593b743272b100b5fd13b5d6ef[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Thu Mar 14 06:10:12 2019 +0300
+
+    v1.3.3 version
+
+[33mcommit a9f8dc71739ec4b36a99baf8dc45889f61be86c3[m
+Merge: 2b866f1 e044ae6
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Thu Mar 14 05:47:50 2019 +0300
+
+    Merge tag 'v1.3.3' into dev
+    
+    v1.3.3
+
+[33mcommit e044ae69021383b18038c37c18c111c5f840421e[m
+Merge: c8810fc 2b866f1
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Thu Mar 14 05:47:50 2019 +0300
+
+    Merge branch 'hotfix/v1.3.3'
+
+[33mcommit 2b866f1acf9687f81a6dc6d9d4147615408a4281[m[33m ([m[1;31morigin/feature/prismaCase[m[33m)[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Thu Mar 14 05:34:19 2019 +0300
+
+    prisma case skins config files
+
+[33mcommit c8810fc994c2ca6e6967f7599e6245a9a358296e[m
+Merge: c1cc47d 988aa57
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Mar 11 18:33:32 2019 +0300
+
+    Merge branch 'master' into dev
+
+[33mcommit 988aa57408bfe22390232ba92fee902fed3b67df[m
+Merge: 50e6a7e f7a1e53
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Mon Mar 11 18:09:31 2019 +0300
+
+    Merge pull request #74 from sneak-it/ptah-update
+    
+    Fix for PTaH update
+
+[33mcommit c1cc47d7a550bddb8dd0b2d4aa0fc5f6e8f30729[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Mon Mar 11 18:06:51 2019 +0300
+
+    expanding sneaK's fix for unnecessary error logs
+
+[33mcommit 50e6a7eeeaa0c46f4a0e32659868c6206b8aad82[m
+Merge: ff17182 5ed45d8
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Mon Mar 11 17:57:58 2019 +0300
+
+    Merge pull request #78 from sneak-it/errfix
+    
+    fix error log
+
+[33mcommit 5ed45d8a92df3e52466f05eb042de598e55b2435[m
+Author: sneak_it <>
+Date:   Mon Mar 11 02:57:34 2019 -0400
+
+    fix error log
+
+[33mcommit f7a1e53c9935e4a32db0f06a2e1ebf420399aa1a[m
+Author: sneaK <sneak-it@users.noreply.github.com>
+Date:   Sat Jan 26 02:45:28 2019 -0500
+
+    fix for ptah update
+
+[33mcommit ff17182900c686d85c9694a79e6b16b047b0a415[m
+Merge: e4bf5f7 a97de51
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Fri Jan 11 12:31:39 2019 +0300
+
+    Merge branch 'feature/jenkins_integration'
+
+[33mcommit a97de510927b35463de53d9e2b971ff040aeb31e[m[33m ([m[1;31morigin/feature/jenkins_integration[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Jan 11 12:29:24 2019 +0300
+
+    jenkins integration and badges
+
+[33mcommit 507905d89da03439832d9ef1a3f766b00678cda4[m
+Merge: 8adc375 e4bf5f7
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Dec 9 15:40:40 2018 +0300
+
+    Merge tag 'v1.3.2' into dev
+    
+    v1.3.2
+
+[33mcommit e4bf5f73f0dc52cfa62b6a548598fee5192a243a[m[33m ([m[1;33mtag: v1.3.2[m[33m)[m
+Merge: c364401 58d3617
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Dec 9 15:40:39 2018 +0300
+
+    Merge branch 'hotfix/v1.3.2'
+
+[33mcommit 58d36172cede9de4435c2ca22e2b2aaed712fd70[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Dec 9 15:40:04 2018 +0300
+
+    only hook WeaponCanUse if the server is in deathmatch gamemode and gametype
+
+[33mcommit 8adc3759e7bf99a1c44827525cef0e6288922aba[m
+Merge: dc350e7 c364401
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Dec 7 14:29:48 2018 +0300
+
+    Merge tag 'v1.3.1' into dev
+    
+    v1.3.1
+
+[33mcommit c3644015318a00387bf7b6cc014a9c2213e1602c[m[33m ([m[1;33mtag: v1.3.1[m[33m)[m
+Merge: 7d57b24 bfa9bd0
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Dec 7 14:29:47 2018 +0300
+
+    Merge branch 'hotfix/v1.3.1'
+
+[33mcommit bfa9bd00ae458fa36430af30d406bffb16c56039[m
+Merge: 7d57b24 dc350e7
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Dec 7 14:29:07 2018 +0300
+
+    Merge branch 'dev' into hotfix/v1.3.1
+
+[33mcommit dc350e76a574cbcebacb903967460a2b03df9875[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Dec 7 11:07:17 2018 +0300
+
+    fix for servers operating in deathmatch mode
+
+[33mcommit 8a466ef0266d9b075711977c68a20b15b0900caf[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Dec 7 11:06:54 2018 +0300
+
+    config update for danger zone case skins and mp5 souvenir skin
+
+[33mcommit 473fd59863d01e761523e6ae77bd75c74a313700[m
+Merge: d5f8f29 7d57b24
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Oct 12 20:44:28 2018 +0300
+
+    Merge tag 'v1.3.0' into dev
+    
+    v1.3.0
+
+[33mcommit 7d57b24ab8598034361afc762a7194ddd9321b81[m[33m ([m[1;33mtag: v1.3.0[m[33m)[m
+Merge: 2e4a949 bb6223f
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Oct 12 20:44:27 2018 +0300
+
+    Merge branch 'release/v1.3.0'
+
+[33mcommit bb6223f4ece54b82aae1c65759c6fbcfd69abae1[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Oct 12 20:42:58 2018 +0300
+
+    mp5sd and new skins
+
+[33mcommit d5f8f29a629786b205a5b75a6d2f8f9385365c9e[m
+Merge: 182fba8 2e4a949
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Aug 3 11:26:51 2018 +0300
+
+    Merge tag 'v1.2.0' into dev
+
+[33mcommit 2e4a949335b683b680d97fd8a4c7f0a0bc8c4f76[m[33m ([m[1;33mtag: v1.2.0[m[33m)[m
+Merge: 46b8532 182fba8
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Aug 3 11:26:50 2018 +0300
+
+    Merge branch 'release/v1.2.0'
+
+[33mcommit 182fba8f7f7ca0fee581adf94ca25c427bdb0b54[m
+Author: kgns <kagan.ustungel@gmail.com>
+Date:   Fri Aug 3 11:14:44 2018 +0300
+
+    horizon case
+
+[33mcommit bfab805cb66f91fa0208c19d4c58fd3f263a5a7e[m
+Merge: ec42eae 46b8532
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Mar 14 01:51:22 2018 +0300
+
+    Merge branch 'master' into dev
+
+[33mcommit 46b8532887f712afab207b81afb2a7a0ec7a7876[m
+Merge: 3d81d5d 8dc32bb
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Mar 14 01:51:09 2018 +0300
+
+    Merge branch 'hotfix/v1.1.3'
+
+[33mcommit 8dc32bb4d5f4cc98df59be647a05638bb039b1db[m[33m ([m[1;33mtag: v1.1.3[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Mar 14 01:50:45 2018 +0300
+
+    version bump
+
+[33mcommit ec42eae2e3e5e9e16fb556e944ca8a6792db5988[m
+Merge: 0ef5516 5d51b1f
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Thu Mar 8 01:00:02 2018 +0300
+
+    Merge branch 'hotfix/v1.1.2' into dev
+
+[33mcommit 3d81d5de45f49bc21fd8810642e56839fe6b97e9[m
+Merge: c0fed51 5d51b1f
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Thu Mar 8 01:00:02 2018 +0300
+
+    Merge branch 'hotfix/v1.1.2'
+
+[33mcommit c0fed5166a1fc2fb45dfc17e3cde85b794b1c3b8[m
+Merge: 33efd89 c7c853e
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Thu Mar 8 00:57:12 2018 +0300
+
+    Merge pull request #38 from komashchenko/master
+    
+    Updating weapon in window
+
+[33mcommit c7c853e95a6f6fe8bc412a55812dad2051c3a2c9[m
+Author: komashchenko <komashchenko@users.noreply.github.com>
+Date:   Wed Mar 7 20:59:20 2018 +0200
+
+    Updating weapon in window
+    
+    Corrects an error when the weapon is not updated in the window
+
+[33mcommit 5d51b1fbd51fb7bae740b6c35d2d246f4afe2cbd[m
+Merge: 87d2c50 4fdc880
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Feb 16 04:36:51 2018 +0300
+
+    Merge branch 'feature/clutchCase' into hotfix/v1.1.2
+
+[33mcommit 33efd896d44d076d163a53d3810c4f8f93048a13[m[33m ([m[1;33mtag: v1.1.2[m[33m)[m
+Merge: 87d2c50 4fdc880
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Feb 16 04:36:10 2018 +0300
+
+    Merge branch 'feature/clutchCase'
+
+[33mcommit 0ef5516d0334c123e048ca958ad4cbe6a262edac[m
+Merge: 7096c81 4fdc880
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Feb 16 04:36:02 2018 +0300
+
+    Merge branch 'feature/clutchCase' into dev
+
+[33mcommit 4fdc8808b7257f36871cd3bf129ea3d610f9373a[m[33m ([m[1;31morigin/feature/clutchCase[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Feb 16 04:35:36 2018 +0300
+
+    new config files for the new clutch case
+
+[33mcommit 7096c81545999a824d77cd23997f04ac8d4920e9[m
+Merge: b837e23 87d2c50
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Feb 13 07:25:13 2018 +0300
+
+    Merge branch 'master' into dev
+
+[33mcommit 87d2c50567482567e8c44085dfb0c7b25e8d92d1[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Feb 13 07:25:01 2018 +0300
+
+    small tweaks to grace period, ability to clear old data of inactive players
+
+[33mcommit 095fa36d68f0f130de4dccdd6caa03a96e50039f[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Feb 13 06:43:44 2018 +0300
+
+    translation updates to skins
+
+[33mcommit caecf266773919ab17a956752cc25f71d50fe98b[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jan 23 18:52:41 2018 +0300
+
+    exclude golden knife
+
+[33mcommit 2aca6b71ac5271fcf49b027015097743715cbbc0[m
+Merge: 5d8c421 59e6a5b
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Mon Nov 20 19:37:41 2017 +0300
+
+    Merge pull request #27 from KewaiiGamer/master
+    
+    Needed for implementation of any skin on any weapon
+
+[33mcommit 59e6a5b29d3de9b343b4eb47ecdd2f4bced664a1[m
+Author: KewaiiGamer <miguelviegas1999@gmail.com>
+Date:   Mon Nov 20 16:32:43 2017 +0000
+
+    Preparing for implementation of any skin on any weapon
+
+[33mcommit 5d8c4217ba2f2372b6a2b31394c076ef38980256[m
+Merge: 02e5953 c66a177
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Thu Sep 21 05:56:47 2017 +0300
+
+    Merge branch 'feature/translations'
+
+[33mcommit b837e23f602a8078a065e73caf5f8b5e7b7ee368[m
+Merge: 244c61b c66a177
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Thu Sep 21 05:56:37 2017 +0300
+
+    Merge branch 'feature/translations' into dev
+
+[33mcommit c66a1777f98afa4bf5cd5a69a13c1664e23bbc0d[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Thu Sep 21 05:56:17 2017 +0300
+
+    russian translation update by roswero
+
+[33mcommit 912c5cc83eb42115d6fa5eb8aa642242d3e743b6[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Thu Sep 21 05:55:48 2017 +0300
+
+    polish translation update by styllek
+
+[33mcommit 1efe044e59b48a001c4088b42275f046fb71ff70[m
+Merge: cff3634 244c61b
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Thu Sep 21 03:03:33 2017 +0300
+
+    Merge branch 'dev' into feature/translations
+
+[33mcommit 244c61be5fbd0a6e871b4549de3b57d441fd2b55[m
+Merge: 9440e70 02e5953
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 05:16:52 2017 +0300
+
+    Merge branch 'master' into dev
+
+[33mcommit 02e595390979ae122d4a20ca64435fc8f86d9cb6[m[33m ([m[1;33mtag: v1.1.1[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 05:16:36 2017 +0300
+
+    french translation update by Cripix
+
+[33mcommit dfaca554dc92957826332aa56dbb733f1db89f83[m
+Merge: eb93e03 907fa74
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 05:10:22 2017 +0300
+
+    Merge pull request #23 from Cripix/patch-1
+    
+    Update and Fix French Translate
+
+[33mcommit 9440e703778ab47df7ed8b28ae5955bf89c87ffd[m
+Merge: 8697faa d18d950
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 05:06:59 2017 +0300
+
+    Merge branch 'hotfix/v1.1.1' into dev
+
+[33mcommit eb93e033130d86afd70f8d1978438bd40044947b[m
+Merge: fe712bf d18d950
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 05:06:58 2017 +0300
+
+    Merge branch 'hotfix/v1.1.1'
+
+[33mcommit d18d950f55a01304bd3f8c2dcf668b444dd79337[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 05:06:26 2017 +0300
+
+    compiled smx v1.1.1
+
+[33mcommit 22dc67e3569dde2d4100b8f5fd11954983e5bde2[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 05:04:49 2017 +0300
+
+    version
+
+[33mcommit 4be264a4b3e64643f2b328195df14e842c11c866[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 05:04:23 2017 +0300
+
+    block !ws !knife !wslang !nametag commands from being shown in chat.
+
+[33mcommit d550f69daad9c48242e94de4786b45c5141a5422[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 04:39:58 2017 +0300
+
+    menus now will close when the grace period ends for choosing skins every round, if that option is enabled
+
+[33mcommit b693a52df65b67aedfd85c3ee9b623ef4e37fd95[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Sep 16 02:33:46 2017 +0300
+
+    float / wear bug fix (forgot to add ! in front after changing variable type from int to bool)
+
+[33mcommit 907fa743ddaa8c52e6fc1447c26394556faa9ad9[m
+Author: Cripix <totobarre3@gmail.com>
+Date:   Fri Sep 15 14:43:51 2017 +0200
+
+    Update and Fix French Translate
+
+[33mcommit 8697faa5635e99b6782567960f4e3d33344faa00[m
+Merge: fa501e8 c0cac49
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Sep 15 06:13:11 2017 +0300
+
+    Merge branch 'release/1.1.0' into dev
+
+[33mcommit fe712bf96d006d3dbdb79e351bcebc0835a4a863[m[33m ([m[1;33mtag: v1.1.0[m[33m)[m
+Merge: 7381e45 c0cac49
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Sep 15 06:13:10 2017 +0300
+
+    Merge branch 'release/1.1.0'
+
+[33mcommit c0cac49b83b15479999de4a9e3b6c5ab76d47b54[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Sep 15 06:12:17 2017 +0300
+
+    new spectrum 2 case skins. there were only english and chinese translations, so used english ones on nearly all languages for now.
+
+[33mcommit 9719fbe2e37c4fc361051ed08bbcb60c8bd4051f[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Sep 8 05:19:41 2017 +0300
+
+    various stability improvements and new nametag system
+
+[33mcommit fa501e848eeffb2558fde6b2b15adbf6f5b5a593[m
+Merge: 7f6548c 43ca13d
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 06:43:52 2017 +0300
+
+    Merge branch 'hotfix/v1.0.11' into dev
+
+[33mcommit 7381e4573071f9392a964296cbcdab3be3a9d2db[m[33m ([m[1;33mtag: v1.0.11[m[33m)[m
+Merge: ba37c18 43ca13d
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 06:43:51 2017 +0300
+
+    Merge branch 'hotfix/v1.0.11'
+
+[33mcommit 43ca13dc9ec68cb616ab6577abd7ac1f8ec814ba[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 06:24:28 2017 +0300
+
+    compiled smx 1.0.11
+
+[33mcommit 8cae72bfb09f783b5599e17d8d78a2272c8525ac[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 06:22:51 2017 +0300
+
+    remove unnecessary debug functions
+
+[33mcommit d88fcc89c6038180034838d0b8427995e394cff6[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 05:40:06 2017 +0300
+
+    version
+
+[33mcommit abb8fa7e39879fc3f5e268c715196c13fe13bd22[m
+Merge: ba37c18 7f6548c
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 05:37:54 2017 +0300
+
+    Merge branch 'dev' into hotfix/v1.0.11
+
+[33mcommit 7f6548c5f65029ac463a75241aaff7be50d6bd0f[m
+Merge: bec8cf5 6fcc32e
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 05:35:09 2017 +0300
+
+    Merge branch 'feature/PTaH-1.0.7-integration' into dev
+    
+    Conflicts:
+            addons/sourcemod/scripting/weapons/hooks.sp
+
+[33mcommit ba37c1876b4a1192a9905ad4b9ef34e1b631100b[m
+Merge: 3baa6cf c4f3790
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 05:09:14 2017 +0300
+
+    Merge branch 'hotfix/v1.0.10'
+
+[33mcommit bec8cf5d5c189592ae786f082e07025a0b1f1697[m
+Merge: b401d4f c4f3790
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Sep 4 05:09:14 2017 +0300
+
+    Merge branch 'hotfix/v1.0.10' into dev
+
+[33mcommit c4f37906fc67b3a1088faad007f2db0696f55627[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Aug 18 17:49:29 2017 +0300
+
+    1.0.10
+
+[33mcommit 49a4e917f56cabaea0d29c75762337614ec68f0a[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Aug 18 17:46:13 2017 +0300
+
+    temporary removal of the faulty function from PTaH
+
+[33mcommit 3baa6cf3dc8a402ffe1910ba1a616b374933a275[m[33m ([m[1;33mtag: v1.0.9[m[33m)[m
+Merge: 6c4f55b edbd5f7
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jul 29 07:21:35 2017 +0300
+
+    Merge branch 'hotfix/v1.0.9'
+
+[33mcommit b401d4fbdcf5dd15beaef3c50c1f5c4c73ce7885[m
+Merge: b4f66f2 edbd5f7
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jul 29 07:21:35 2017 +0300
+
+    Merge branch 'hotfix/v1.0.9' into dev
+
+[33mcommit edbd5f781311a35ebb0d9156a8f32bdaf5dea826[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jul 29 07:21:21 2017 +0300
+
+    a small bugfix
+
+[33mcommit 6c4f55ba350cb559e339aeab3e5412aa75a2d018[m[33m ([m[1;33mtag: v1.0.8[m[33m)[m
+Merge: f11838e d1e35f7
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jul 25 06:37:02 2017 +0300
+
+    Merge branch 'hotfix/v1.0.8'
+
+[33mcommit b4f66f20a211cd53953ef49f40a52f0e8ed5a7fe[m
+Merge: 8b40173 d1e35f7
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jul 25 06:37:02 2017 +0300
+
+    Merge branch 'hotfix/v1.0.8' into dev
+
+[33mcommit d1e35f76bc824026dab0c453ac274d952d5e4d81[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jul 25 06:36:33 2017 +0300
+
+    reverting changes for deathmatch servers
+
+[33mcommit e76e70fd1add39882c1a55d9a9f515191c1ae087[m
+Merge: f11838e cff3634
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jul 25 06:32:53 2017 +0300
+
+    Merge branch 'feature/translations' into hotfix/v1.0.8
+
+[33mcommit 6fcc32ea8e7437cbbcf22b872d79d9502729ae26[m[33m ([m[1;31morigin/feature/PTaH-1.0.7-integration[m[33m)[m
+Merge: 89f9722 8b40173
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Jul 24 04:20:55 2017 +0300
+
+    Merge branch 'dev' into feature/PTaH-1.0.7-integration
+
+[33mcommit 89f97223dc73c3f609eca7615c50f82ec07a5829[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Mon Jul 24 04:20:23 2017 +0300
+
+    no need
+
+[33mcommit 8b40173331d289a69d3cb6805c4f2143e34008e8[m
+Merge: 39ace8d cff3634
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Jul 23 18:28:24 2017 +0300
+
+    Merge branch 'feature/translations' into dev
+
+[33mcommit cff36349360cd4c388c2a1631d917d0b56aed6e8[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Jul 23 18:28:07 2017 +0300
+
+    update to hu translation
+
+[33mcommit c42f69b47fb90be330e3cbd2aeab59438b884092[m
+Merge: 9c0fa79 39ace8d
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Jul 23 01:48:02 2017 +0300
+
+    Merge branch 'dev' into feature/PTaH-1.0.7-integration
+
+[33mcommit 39ace8d959e47d4c4729d755e232d4e31ce3ece0[m
+Merge: ab49d47 10b094c
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Jul 23 01:42:12 2017 +0300
+
+    Merge branch 'feature/translations' into dev
+
+[33mcommit 10b094c8f4e8814042306a15966f38b1382a21cf[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Jul 23 01:41:30 2017 +0300
+
+    pt and pt_p translations
+
+[33mcommit 9c0fa790cb976c7bae797607d5fba9d23fb67162[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jul 22 03:04:02 2017 +0300
+
+    fix for equip weapon and loadout itemdefinitionindex
+
+[33mcommit e7acacdaa87e4f1c08f5b1883524fccc3440ed94[m
+Merge: d36a2b1 ab49d47
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Jul 21 23:49:46 2017 +0300
+
+    Merge branch 'dev' into feature/PTaH-1.0.7-integration
+    
+    Conflicts:
+            addons/sourcemod/scripting/weapons/hooks.sp
+
+[33mcommit ab49d47f579cb656e6bd2ba37be15815e24a9955[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Jul 21 23:44:41 2017 +0300
+
+    dont need format function for this
+
+[33mcommit d36a2b142133882db07691961d011d765fb4abb1[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Jul 21 23:33:48 2017 +0300
+
+    forgot equip weapon for knives
+
+[33mcommit a88c7135d7959040bde0f23281a897d1fd67055f[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Jul 21 20:51:49 2017 +0300
+
+    typo
+
+[33mcommit 9ef680711c109496622a4db35540bd8d589870e5[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Jul 21 20:31:13 2017 +0300
+
+    ptah update
+
+[33mcommit 5e265ea244cf07da46374572a2efe3c35ed7f089[m
+Merge: ecfed01 034e9c7
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 07:31:03 2017 +0300
+
+    Merge branch 'hotfix/v1.0.7' into dev
+
+[33mcommit f11838e1b517c400a20477a31d8895411c4a0766[m[33m ([m[1;33mtag: v1.0.7[m[33m)[m
+Merge: ecfed01 034e9c7
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 07:31:02 2017 +0300
+
+    Merge branch 'hotfix/v1.0.7'
+
+[33mcommit 034e9c7930db4406dbcad3080d4bab0a84b0e0db[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 07:30:20 2017 +0300
+
+    v1.0.7 compiled smx
+
+[33mcommit 4c4945a519f9f8541a906f19b8cb630de98a9957[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 07:26:51 2017 +0300
+
+    small optimization
+
+[33mcommit ec555ab6f6854d8a2651b381176a78c4d33b3dd6[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 07:10:07 2017 +0300
+
+    database connection fix and some efficiency improvements
+
+[33mcommit e3949758ace504bc2dd38aa982fe2db259c6b61f[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 01:16:47 2017 +0300
+
+    changed variable names from komashchenko's merge to my liking
+
+[33mcommit ecfed010489daf0df3cbfcebd67efae0bf4d22ec[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 01:09:57 2017 +0300
+
+    Polish translation added thanks to styllek & Nevvy
+
+[33mcommit c59112621004dfd3c20a970cf67cb9a0652ede84[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 01:09:25 2017 +0300
+
+    Hungarian translation added thanks to wasyady
+
+[33mcommit cc7f735f8bbd0c3e064ed38bc70fe97b2306e939[m
+Merge: 3868213 a57399e
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Wed Jul 19 00:10:48 2017 +0300
+
+    Merge pull request #5 from komashchenko/master
+    
+    Fix WeaponCanUse
+
+[33mcommit a57399e30d78bf4ca893a422a6754a2738cf974c[m
+Author: komashchenko <komashchenko@users.noreply.github.com>
+Date:   Thu Jun 29 14:40:10 2017 +0300
+
+    Update hooks.sp
+
+[33mcommit 1d0d0f73cd5dae68e1614bfdd10e1a819f64030f[m
+Author: komashchenko <komashchenko@users.noreply.github.com>
+Date:   Thu Jun 29 14:36:55 2017 +0300
+
+    Update hooks.sp
+
+[33mcommit ced25fc03d79c6cc4954a24feb29967cc412d249[m
+Author: komashchenko <komashchenko@users.noreply.github.com>
+Date:   Thu Jun 29 14:34:37 2017 +0300
+
+    Update weapons.sp
+
+[33mcommit 386821398a5abec353d5d04cf10e1fefeb6c2419[m[33m ([m[1;33mtag: v1.0.6[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jun 28 04:04:05 2017 +0300
+
+    1.0.6 compiled smx
+
+[33mcommit 531816e7d63fea1faa42d90aa0f8f2a0531598ff[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jun 28 04:03:55 2017 +0300
+
+    removed code for knife pick up, getting server crashes with it
+
+[33mcommit ddbb5e70fc08ee89d77326844ecdf614db66f5a4[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jun 27 23:28:36 2017 +0300
+
+    few optimizations
+
+[33mcommit 00a275b63c5baaea9531b0e506d7caf449df5dde[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jun 27 23:17:06 2017 +0300
+
+    don't need this check
+
+[33mcommit 6561d10b973db3bdd77e6262a13c95f6a62004eb[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jun 27 23:13:25 2017 +0300
+
+    !nametag spam protection
+
+[33mcommit aa6d333b64c6f1e891317b72da755750989fdec6[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jun 27 22:54:58 2017 +0300
+
+    fix for weapons' reserve ammo remembering
+
+[33mcommit 4f352dda8af508319745c2ca26eeec2039509c38[m[33m ([m[1;33mtag: v1.0.5[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jun 27 16:35:59 2017 +0300
+
+    v1.0.5 compiled smx
+
+[33mcommit b04f0bdb48e9d433a5f5743b29f7b925957531fc[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jun 27 16:34:24 2017 +0300
+
+    fix for players not being able to pickup dropped knives from this plugin (to be used with mp_drop_knife_enable cvar)
+    new version
+
+[33mcommit ca90c60c3559fa1864fdfb202dece6ce5e4d79fa[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Tue Jun 27 15:48:21 2017 +0300
+
+    fix for people using same knife type as their own legit knife type
+
+[33mcommit 43756e3025e893ff88769cc0d2a3cc2ca4bbcf2b[m[33m ([m[1;33mtag: v1.0.4[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Jun 25 20:05:14 2017 +0300
+
+    1.0.4 compiled smx
+
+[33mcommit 8cb960b04d00897989740e633af85e9406408e57[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Jun 25 20:04:23 2017 +0300
+
+    increase version
+
+[33mcommit a0da3db14617e462e2f469890a65e004720620ed[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sun Jun 25 20:01:56 2017 +0300
+
+    Russian translation provided by Reswero
+
+[33mcommit cc80a37c7f1fbc8a8d51c86c1e424872f9074682[m[33m ([m[1;33mtag: v1.0.3[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jun 24 12:35:01 2017 +0300
+
+    v1.0.3 compiled smx
+
+[33mcommit 6d8d543e0dee6b90e40610662579b1ccd7a586ee[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jun 24 12:34:43 2017 +0300
+
+    new version
+
+[33mcommit 3acbb9a4fdad4b7d1caa44f747f0b2a77a34d0af[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jun 24 12:31:39 2017 +0300
+
+    fix convar handling
+
+[33mcommit 661da3295f44512fa5f4205ccc3025f950078e44[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jun 24 04:08:28 2017 +0300
+
+    portuguese translation by ShutDowN
+
+[33mcommit 8503a4fbc961dc1f5309410379fe9f50f3107d52[m[33m ([m[1;33mtag: v1.0.2[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jun 24 01:20:40 2017 +0300
+
+    1.0.2 compiled smx
+
+[33mcommit 09d550f346ccd7f386944e922b405e22860103ba[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Sat Jun 24 01:11:02 2017 +0300
+
+    sqlite support
+
+[33mcommit 796f3e9d13c0e832e9f11fb81604329907745993[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Fri Jun 23 23:57:06 2017 +0300
+
+    fix for the issue reported by szogun from alliedmods.net
+    french translation added thanks to Cripix from alliedmods.net
+
+[33mcommit ff120bdbd635dca530aff6c04a213b82270cd38e[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Thu Jun 22 16:45:35 2017 +0300
+
+    Update README.md
+
+[33mcommit bba0e318b11be000b383ca0a98de219a17597972[m[33m ([m[1;33mtag: v1.0.1[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jun 21 20:44:49 2017 +0300
+
+    latest compiled smx
+
+[33mcommit b0727bc49b0d3ca0bc9b80468dfea6ca52beb85c[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jun 21 20:43:58 2017 +0300
+
+    knife model console spam fix
+    max_lang array size fix
+    tiny db change
+
+[33mcommit ad0b51133ee76db9ebc6129b6f18d3871fab99b3[m[33m ([m[1;33mtag: v1.0.0[m[33m)[m
+Author: kaganus <kagan.ustungel@gmail.com>
+Date:   Wed Jun 21 19:24:34 2017 +0300
+
+    first release
+
+[33mcommit ddf06db29338998e2046b44c5de4f2327f3dfa66[m
+Author: Kağan Üstüngel <kagan.ustungel@gmail.com>
+Date:   Tue Jun 20 03:07:33 2017 +0300
+
+    Initial commit
